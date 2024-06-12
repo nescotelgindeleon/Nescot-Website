@@ -17,6 +17,8 @@ nav {
 }
 
 nav > div.Logo {
+    image-resolution: 100%;
+
     height: 100%;
     display: grid;
     place-items: center;
