@@ -1,39 +1,83 @@
 body {
     margin: 0px;
     padding: 0;
-    background-color: cadetblue;
+    background-color: #181818;
 }
 
 nav {
     --Logo-offset: 5px;
-    --nav-height: 70px;
+    --Nav-height: 100px;
     --Logo-width: 300px;
 
-    height: var(--nav-height);
+    height: var(--Nav-height);
+    width: 100%;
+    top: 0px;
+
     border-bottom-right-radius: 30px;
+
     overflow: hidden;
     background-color: #5C2684;
-    position: relative;
+    position: absolute;
 }
 
 nav > div.Logo {
-    image-resolution: 100%;
-
     height: 100%;
     display: grid;
     place-items: center;
+
     width: var(--Logo-width);
+
     background-color: rgb(255, 255, 255);
     background-color: white;
     border-top-right-radius: 50px;
 }
 
+nav > div.Logo > img {
+    height: 60px;
+    width: var(--Logo-width) - 10px;
+}
+
 nav::after {
     content: "";
     position: absolute;
-    height: 40%;
+
+    height: 50%;
     width: calc(100% - var(--Logo-width) + var(--Logo-offset));
     left: calc(var(--Logo-width) - var(--Logo-offset));
     bottom: 0;
+
     background-color: rgb(255, 255, 255);
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - var(--Logo-width));
+    left: var(--Logo-width);
+    color: black;
+    z-index: 3;
+}
+
+nav li {
+    float: left;
+}
+
+nav li > * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #5C2684;
 }
