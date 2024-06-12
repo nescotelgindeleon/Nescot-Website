@@ -17,6 +17,16 @@ nav {
 }
 
 nav > div.Logo {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: var(--Logo-width);
+    background-color: rgb(255, 255, 255);
+    background-color: white;
+    border-top-right-radius: 50px;
+}
+
+nav::after {
     content: "";
     position: absolute;
     height: 40%;
