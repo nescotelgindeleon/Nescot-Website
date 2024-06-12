@@ -3,3 +3,25 @@ body {
     padding: 0;
     background-color: cadetblue;
 }
+
+nav {
+    --Logo-offset: 5px;
+    --nav-height: 70px;
+    --Logo-width: 300px;
+
+    height: var(--nav-height);
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    background-color: #5C2684;
+    position: relative;
+}
+
+nav > div.Logo {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: calc(100% - var(--Logo-width) + var(--Logo-offset));
+    left: calc(var(--Logo-width) - var(--Logo-offset));
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+}
