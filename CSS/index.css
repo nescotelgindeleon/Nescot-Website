@@ -1,0 +1,79 @@
+body {
+    --TextGap-Left: 50px;
+    --TextGap-All: 20px;
+
+    background-color: #181818;
+    background-image: linear-gradient(#C9C7CC, #181818);
+}
+
+.indexBanner > img {
+    object-fit: cover;
+    object-position: 50% 55%;
+
+    height: 450px;
+    width: 100%;
+}
+
+.AboutUs {
+    --BackgroundFrame-BorderRadius: 45px;
+
+    border-top-right-radius: var(--BackgroundFrame-BorderRadius);
+    border-bottom-right-radius: var(--BackgroundFrame-BorderRadius);
+
+    width: 80%;
+    translate: 0 -70px;
+    padding-top: var(--TextGap-All);
+    padding-bottom: var(--TextGap-All);
+    padding-right: var(--TextGap-All);
+    padding-left: var(--TextGap-Left);
+    color: white;
+    background: #451C63;
+}
+
+.AboutUs > * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.AboutUs > h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.AboutUs > p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.Quote {
+    --Image-Padding: 30px;
+
+    padding-right: 100px;
+    padding-left: var(--Image-Padding);
+    display: flex;
+}
+
+.Quote > .Content {
+    flex-grow: 1;
+}
+
+.Quote > .Content > * {
+    padding-left: var(--Image-Padding);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Quote > .Content > .Title {
+    align-self: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Quote > .Content > .Message {
+    font-style: italic;
+}
+
+.Quote > .Content > .Message, .From {
+    font-size: 18px;
+    font-weight: lighter;
+}
