@@ -1,0 +1,72 @@
+body {
+    --TextGap-Left: 50px;
+    --TextGap-All: 20px;
+
+    background-color: white;
+}
+
+.CourseBanner > img {
+    object-fit: cover;
+    object-position: 50% 25%;
+
+    height: 450px;
+    width: 100%;
+}
+
+.Title {
+    --BackgroundFrame-BorderRadius: 45px;
+    --BackgroundFrame-Padding: 1px;
+
+    border-top-right-radius: var(--BackgroundFrame-BorderRadius);
+    border-bottom-right-radius: var(--BackgroundFrame-BorderRadius);
+
+    padding-left: 35px;
+    padding-top: var(--BackgroundFrame-Padding);
+    padding-bottom: var(--BackgroundFrame-Padding);
+    padding-right: var(--BackgroundFrame-Padding);
+
+    max-width: 90%;
+    width: max-content;
+    translate: 0 -65px;
+    color: white;
+    background-color: #451C63;
+}
+
+.Title > h1 {
+    font-size: 25px;
+    padding-right: 50px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lists {
+    display: grid;
+    gap: 20px;
+    place-items: center;
+}
+
+.Lists > * {
+    --Padding-Size: 35px;
+
+    background-color: #E2E2E2;
+
+    translate: 0px -55px;
+    border-radius: 20px;
+    width: 90%;
+
+    padding-left: var(--Padding-Size);
+    padding-right: var(--Padding-Size);
+    padding-bottom: 20px;
+
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.DescTitle {
+    font-size: 25px;
+    color: #451C63;
+}
+
+.Highlight {
+    font-size: 20px;
+    color: black;
+}

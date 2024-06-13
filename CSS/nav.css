@@ -76,8 +76,15 @@ nav li > * {
     padding: 14px 16px;
     text-decoration: none;
 
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #5C2684;
+}
+
+.NavButtons *:hover {
+    transition: 250ms;
+    background-color: #5C2684;
+    color: white;
+    translate: 0px -1px;
 }

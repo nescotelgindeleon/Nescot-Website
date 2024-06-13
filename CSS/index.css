@@ -52,8 +52,14 @@ body {
     display: flex;
 }
 
+.Quote > .Image > img {
+    transform: rotate(18deg);
+    translate: 0px -40px;
+}
+
 .Quote > .Content {
     flex-grow: 1;
+    translate: 0px -80px;
 }
 
 .Quote > .Content > * {
@@ -64,7 +70,7 @@ body {
 }
 
 .Quote > .Content > .Title {
-    align-self: center;
+    text-align: center;
     font-size: 40px;
     font-weight: bold;
 }
